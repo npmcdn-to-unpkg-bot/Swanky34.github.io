@@ -9,22 +9,23 @@
 title: Broseidon's Palace
 email: jayratajczak@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is just a personal project demonstrating different design techniques. 
+  Feel free to use for inspiration, education, or to borrow elements for your own site.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://swanky34.github.io" # the base hostname & protocol for your site
+
+github_username: Swanky34
 
 # Build settings
 markdown: kramdown
 
 internal_links:
+  - name: The Shoreline
+    url: /
   - name: The Throne Room
     url: /throne
   - name: The Stables
-    url: /Tstables
+    url: /stables
   - name: The Treasury
     url: /treasury
   - name: The Attendants
