@@ -16,6 +16,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-family: 'Oxygen', sans-serif;
+  z-index: 0;
 }
 article,
 aside,
@@ -4215,6 +4216,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-right: 0;
     padding-left: 0;
     background-color: transparent;
+    z-index: 100;
   }
 }
 .navbar-fixed-top .navbar-collapse,
@@ -6765,6 +6767,8 @@ button.close {
   text-decoration: none;
   color: #fff;
   background-color: transparent;
+  z-index: 100;
+  font-weight: 600;
 }
 
 .mainnav a:visited{
@@ -6839,6 +6843,15 @@ button.close {
   z-index: -100;
   background-position: bottom;
 }
+.fh5co-table2,
+.fh5co-table-cell2,
+.fh5co-hero2,
+.fh5co-parallax2 {
+  height: 30vh;
+  color: #fefefe;
+  z-index: -100;
+  background-position: bottom;
+}
 
 .fh5co-hero, .fh5co-parallax {
   background-color: transparent;
@@ -6852,6 +6865,7 @@ button.close {
   transform-origin: bottom center 0;
   transform: translateZ(1px) scale(1.10);
   height: 110vh;
+  z-index: -100;
 }
 .fh5co-hero .overlay, .fh5co-parallax .overlay {
   position: absolute;
@@ -6908,6 +6922,10 @@ button.close {
 .fh5co-table-cell {
   margin-top: 30vh;
 }
+.fh5co-table-cell2 {
+  margin-top: 0vh;
+}
+
 
 .fh5co-section {
   padding: 5em 0;
@@ -6962,3 +6980,15 @@ button.close {
 .js .animate-box {
   opacity: 0;
 }
+#footer {
+  background-position: top; 
+  background-image: url(/assets/img/pebblesfooter.jpg);
+}
+.footertitle {
+  font-size: 26px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.footertitle a{
+  color: #fff;
+  }
