@@ -6851,6 +6851,7 @@ button.close {
   color: #fefefe;
   z-index: -100;
   background-position: bottom;
+
 }
 
 .fh5co-hero, .fh5co-parallax {
@@ -6865,7 +6866,7 @@ button.close {
   transform-origin: bottom center 0;
   transform: translateZ(1px) scale(1.10);
   height: 110vh;
-  z-index: -100;
+  z-index: 0;
 }
 .fh5co-hero .overlay, .fh5co-parallax .overlay {
   position: absolute;
@@ -6877,16 +6878,6 @@ button.close {
   opacity: .6;
 }
 
-.fh5co-herotruck .overlay, .fh5co-parallax .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: black;
-  opacity: .5;
-  z-index: 1;
-}
 
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
@@ -6921,6 +6912,8 @@ button.close {
 
 .fh5co-table-cell {
   margin-top: 30vh;
+  position: relative;
+  z-index: 100;
 }
 .fh5co-table-cell2 {
   margin-top: 0vh;
@@ -6991,4 +6984,106 @@ button.close {
 }
 .footertitle a{
   color: #fff;
-  }
+}
+.glphyicon-bottom{
+  margin-top: 65vh;
+}
+.herospacing {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.centered img{
+  margin: 0 auto;
+  display: block;
+}
+.activities{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/*==============================
+  MY STYLES
+==============================*/
+#content {
+width: 80%;
+height: auto;
+margin: 0 auto;
+margin-top: 20px;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.box-title {
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.box {
+color: #fefefe;
+padding: 1% 0 1% 0;
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+width: auto;
+border-radius: 5px;
+min-height: 350px;
+max-height: auto;
+}
+.box img {
+  margin: 0 auto;
+  max-height: auto;
+  width: 350px;
+}
+
+#nav {
+margin-left: 20px;
+margin-top: 20px;
+z-index: 100;
+}
+
+#nav a {
+text-decoration: none;
+font-size: 15px;
+line-height: 25px;
+color: #595959;
+}
+
+#nav a:hover {
+color: #393939;
+}
+
+#nav a:active {
+color: #151515;
+}
+

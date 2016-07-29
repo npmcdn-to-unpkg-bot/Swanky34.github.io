@@ -3,14 +3,209 @@ layout: default
 title: The Stables
 ---
 
-<div class="fh5co-hero" style="background-image: url(/assets/img/underwater-body.jpg);" data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-        <div class="fh5co-intro fh5co-table-cell">
-          <h1>The Stables</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/isotope.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var $container = $('#content');
+$container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+
+$('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+	 
+   }
+  });
+  return false;
+});
+
+});
+</script>
+<div class="container">
+	<div class="row" >
+	<div id="nav" style="display: inline; list-style: none;">
+		<ul class="pull-right" style="display: inline; list-style: none;">
+			<li><a href="" data-filter="*">All</a></li>
+			<li><a href="" data-filter=".front">Front</a></li>
+			<!-- <li><a href="" data-filter=".back">Back</a></li> -->
+			<li><a href="" data-filter=".wheel">Wheel</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid">
+	
+	<div id="header"></div>
+	
+	<div class="row">
+	<div id="content">
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized0.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized1.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized2.png">
+			</div>
+		</div>
+		
+		<div class="box wheel back">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized3.png">
+			</div>
+		</div>
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized4.png">
+			</div>
+		</div>
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized5.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized6.png">
+			</div>
+		</div>
+		
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized7.png">
+			</div>
+		</div>
+		
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized8.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized10.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized11.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized12.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized13.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized14.png">
+			</div>
+		</div>
+
+		<div class="box back ">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized15.png">
+			</div>
+		</div>
+
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized16.png">
+			</div>
+		</div>
+
+		<div class="box back">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized17.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized18.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized19.png">
+			</div>
+		</div>
+
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized20.png">
+			</div>
+		</div>
+
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized21.png">
+			</div>
+		</div>
+
+		<div class="box back">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/cars/resized22.png">
+			</div>
+		</div>
+
+		</div>
+	</div>
+</div>
 </div>

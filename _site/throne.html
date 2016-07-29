@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta description="">
-  <title>The Throne Room | Broseidon's Palace</title>
+  <title>The Palace | Broseidon's Palace</title>
 
   <meta name="description" content="This is just a personal project demonstrating different design techniques.  Feel free to use for inspiration, education, or to borrow elements for your own site.
 ">
@@ -33,10 +33,12 @@
   <meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <script src="/assets/js/animate.js"></script>
   <script type="text/javascript" src="https://raw.github.com/brandonaaron/jquery-mousewheel/master/jquery.mousewheel.js"></script>
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
   <script>
   $(document).ready(function() {
       var page = $('#content');    
@@ -47,7 +49,9 @@
       })
   });
   </script>
-
+    
+    
+    
 
 </head>
   
@@ -100,49 +104,159 @@
 
   <article class="post">
     <div class="post-content">
-      <div class="fh5co-hero" style="background-image: url(/assets/img/underwater-body.jpg);" data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-        <div class="fh5co-intro fh5co-table-cell">
-          <h1>The Throne Room</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/isotope.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var $container = $('#content');
+$container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+
+$('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+	 
+   }
+  });
+  return false;
+});
+
+});
+</script>
+<div class="container">
+	<div class="row" >
+	<div id="nav" style="display: inline; list-style: none;">
+		<ul class="pull-right" style="display: inline; list-style: none;">
+			<li><a href="" data-filter="*">All</a></li>
+			<li><a href="" data-filter=".front">Front</a></li>
+			<!-- <li><a href="" data-filter=".back">Back</a></li> -->
+			<li><a href="" data-filter=".wheel">Wheel</a></li>
+		</ul>
+	</div>
+</div>
 </div>
 
+<div class="container-fluid">
+	
+	<div id="header"></div>
+	
+	<div class="row">
+	<div id="content">
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized0.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized1.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized2.png">
+			</div>
+		</div>
+		
+		<div class="box wheel back">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized3.png">
+			</div>
+		</div>
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized4.png">
+			</div>
+		</div>
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized5.png">
+			</div>
+		</div>
+		
+		<div class="box front">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized6.png">
+			</div>
+		</div>
+		
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized7.png">
+			</div>
+		</div>
+		
+		<div class="box front wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized8.png">
+			</div>
+		</div>
+
+		<div class="box wheel">
+			<h2 class="box-title">Lorem Ipsum</h2>
+			<div class="box-text">
+				<img src="/assets/img/houses/resized9.png">
+			</div>
+		</div>
+
+</div>
+	</div>
+</div>
+</div>
     </div>
   </article>
 
-  <div id="footer">
+  <div id="footer" style="z-index:100;">
     <div class="container-fluid">
-  <div class="row centered">
-    <div class="col-lg-4 img-circle centered footertitle animate-box">
+  <div class="row centered ">
+    <div class="pull-left col-lg-6 img-circle centered footertitle ">
       
           
           
-            <ul class="active"><h3><a href="/" class="active">The Shoreline</a></h3></ul>
+            <ul class="active pull-left"><h4><a href="/" class="active">The Shoreline</a></h4></ul>
           
         
           
           
-            <ul class="active"><h3><a href="/throne" class="active">The Throne Room</a></h3></ul>
+            <ul class="active pull-left"><h4><a href="/throne" class="active">The Throne Room</a></h4></ul>
           
         
           
           
-            <ul><h3><a href="/stables">The Stables</a></h3></ul>
+            <ul class=" pull-left"><h4><a href="/stables">The Stables</a></h4></ul>
           
         
           
           
-            <ul><h3><a href="/treasury">The Treasury</a></h3></ul>
+            <ul class=" pull-left"><h4><a href="/treasury">The Treasury</a></h4></ul>
           
         
           
           
-            <ul><h3><a href="/attendants">The Attendants</a></h3></ul>
+            <ul class=" pull-left"><h4><a href="/attendants">The Attendants</a></h4></ul>
           
         
       </div>
